@@ -1,0 +1,20 @@
+{
+  "name": "honest-ecommerce",
+  "version": "1.0.0",
+  "description": "Modern E-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.0",
+    "framer-motion": "^10.16.0",
+    "@heroicons/react": "^2.0.18",
+    "swiper": "^11.0.0"
+  }
+}

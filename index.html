@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scaled-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Honest E-commerce</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>HONEST</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="product.html"><i class="fas fa-shopping-bag"></i>Products</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                </ul>
+            </nav>
+           
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="cart-icon" id="cart-toggle"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: <span>$0.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="video-background">
+                <video class="hero-video active" autoplay muted loop>
+                    <source src="clip/clip-2-shoe.mp4" type="video/mp4">
+                </video>
+                <video class="hero-video" autoplay muted loop>
+                    <source src="clip/clip-3-cloth.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 style="color: white; text-decoration: solid;">Summer Collection 2024</h2>
+                        <p style="color: white; text-decoration: solid; overlay: red;">Discover the latest trends in fashion</p>
+                        <button class="shop-now-btn">Shop Now</button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800" alt="Fashion Model">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=400" alt="Women's Fashion">
+                        <h3>Women's Fashion</h3>
+                        <a href="#" class="category-btn">Explore</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400" alt="Men's Fashion">
+                        <h3>Men's Fashion</h3>
+                        <a href="#" class="category-btn">Explore</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400" alt="Accessories">
+                        <h3>Accessories</h3>
+                        <a href="#" class="category-btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400" alt="Product 1">
+                        <h3>Classic White Shirt</h3>
+                        <p class="price">$49.99</p>
+                        <a href="product.html" class="view-product">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" alt="Product 2">
+                        <h3>Leather Jacket</h3>
+                        <p class="price">$199.99</p>
+                        <a href="product.html" class="view-product">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400" alt="Product 3">
+                        <h3>Designer Watch</h3>
+                        <p class="price">$299.99</p>
+                        <a href="product.html" class="view-product">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonial-carousel">
+                    <div class="testimonial-slide active">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Customer 1">
+                        <p>"Amazing quality and fast delivery. Will definitely shop again!"</p>
+                        <h4>Sarah Johnson</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Customer 2">
+                        <p>"Great selection of products and excellent customer service."</p>
+                        <h4>Mike Thompson</h4>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Discover the latest fashion trends with Honest E-commerce.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/OlafemTech"><i class="fab fa-github"></i></a>
+                        <a href="http"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Honest E-commerce. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Chat Response Section -->
+<div class="chat-response">
+    <div class="chat-toggle">
+        <i class="fas fa-comments"></i>
+        <span class="notification-badge">0</span>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Customer Support</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <div class="message system">
+                <p>Welcome to Honest E-commerce! How can we help you today?</p>
+                <span class="time">Just now</span>
+            </div>
+        </div>
+        <div class="quick-responses">
+            <button class="response-btn">Products Info</button>
+            <button class="response-btn">Shipping</button>
+            <button class="response-btn">Returns</button>
+            <button class="response-btn">Payment</button>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

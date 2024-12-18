@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Honest E-commerce</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>HONEST</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="product.html"><i class="fas fa-shopping-bag"></i>Products</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                </ul>
+            </nav>
+           
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="cart-icon" id="cart-toggle"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: <span>$0.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <main class="product-page">
+        <div class="container">
+            <div class="product-details">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800" alt="Product Main Image" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200" alt="Thumbnail 1" class="active">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200&q=80" alt="Thumbnail 2">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200&q=60" alt="Thumbnail 3">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>Classic White Shirt</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>(4.5/5 - 128 Reviews)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$49.99</span>
+                        <span class="original-price">$69.99</span>
+                        <span class="discount">-28%</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Premium quality white shirt made from 100% cotton. Perfect for both casual and formal occasions. Features a modern fit and durable buttons.</p>
+                    </div>
+                    <div class="product-variants">
+                        <h3>Size:</h3>
+                        <div class="size-options">
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn active">L</button>
+                            <button class="size-btn">XL</button>
+                        </div>
+                        <h3>Color:</h3>
+                        <div class="color-options">
+                            <button class="color-btn white active"></button>
+                            <button class="color-btn blue"></button>
+                            <button class="color-btn black"></button>
+                        </div>
+                    </div>
+                    <div class="product-quantity">
+                        <h3>Quantity:</h3>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-meta">
+                        <p><i class="fas fa-truck"></i> Free shipping on orders over $50</p>
+                        <p><i class="fas fa-undo"></i> 30-day return policy</p>
+                        <p><i class="fas fa-lock"></i> Secure checkout</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-additional">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>This classic white shirt is a wardrobe essential that combines style with comfort. Made from premium cotton, it features:</p>
+                        <ul>
+                            <li>100% premium cotton fabric</li>
+                            <li>Modern slim fit design</li>
+                            <li>Reinforced buttons</li>
+                            <li>Easy-care fabric treatment</li>
+                            <li>Available in multiple sizes and colors</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="specifications">
+                        <h3>Product Specifications</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Material</td>
+                                <td>100% Cotton</td>
+                            </tr>
+                            <tr>
+                                <td>Fit</td>
+                                <td>Modern Slim Fit</td>
+                            </tr>
+                            <tr>
+                                <td>Care Instructions</td>
+                                <td>Machine washable at 30°C</td>
+                            </tr>
+                            <tr>
+                                <td>Origin</td>
+                                <td>Made in Portugal</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <h4>4.5</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>Based on 128 reviews</p>
+                            </div>
+                        </div>
+                        <div class="reviews-list">
+                            <!-- Review items will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Discover the latest fashion trends with Honest E-commerce.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Honest E-commerce. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Chat Response Section -->
+<div class="chat-response">
+    <div class="chat-toggle">
+        <i class="fas fa-comments"></i>
+        <span class="notification-badge">0</span>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Customer Support</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <div class="message system">
+                <p>Welcome to Honest E-commerce! How can we help you today?</p>
+                <span class="time">Just now</span>
+            </div>
+        </div>
+        <div class="quick-responses">
+            <button class="response-btn">Products Info</button>
+            <button class="response-btn">Shipping</button>
+            <button class="response-btn">Returns</button>
+            <button class="response-btn">Payment</button>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
